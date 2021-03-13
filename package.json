@@ -1,0 +1,39 @@
+{
+  "name": "@ipoa/utils",
+  "version": "0.0.2",
+  "description": "utils is a library of generic helper functions non-specific to ipoa",
+  "main": "lib/utils.js",
+  "scripts": {
+    "test": "mocha --check-leaks ./tests/*.test.js ./tests/**/*.test.js",
+    "lint": "eslint --ext \".js\" lib tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipoa/node-utils.git"
+  },
+  "keywords": [
+    "utils",
+    "library",
+    "helper"
+  ],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "ipoa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ipoa/node-utils/issues"
+  },
+  "homepage": "https://github.com/ipoa/node-utils#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-mocha": "^8.1.0",
+    "mocha": "^8.3.2",
+    "should": "^13.2.3"
+  }
+}
