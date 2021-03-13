@@ -23,3 +23,11 @@ To run the tests for should simply run:
 ```shell
 npm install && npm test
 ```
+
+## Resources
+
+- [changelog](./README.md)
+
+## License
+
+[MIT](./LICENSE)
