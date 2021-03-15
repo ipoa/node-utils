@@ -1,6 +1,7 @@
 # @ipoa/utils
 
-[![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.org/package/@ipoa/utils)
+[![npm version](https://img.shields.io/npm/v/@ipoa/utils.svg?style=flat-square)](https://www.npmjs.org/package/@ipoa/utils)
+[![install size](https://shields.io/badge/@ipoa/utils-v0.0.5-blue)](https://www.npmjs.org/package/@ipoa/utils)
 [![install size](https://packagephobia.com/badge?p=@ipoa/utils)](https://packagephobia.com/result?p=@ipoa/utils)
 
 ## install
