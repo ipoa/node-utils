@@ -20,6 +20,7 @@
     "index.js",
     "index.d.ts",
     "lib/",
+    "tests",
     "README.md",
     "LICENSE"
   ],
