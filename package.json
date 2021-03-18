@@ -1,6 +1,6 @@
 {
   "name": "@ipoa/utils",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "utils is a library of generic helper functions non-specific to ipoa",
   "main": "lib/utils.js",
   "scripts": {
