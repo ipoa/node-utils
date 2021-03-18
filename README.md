@@ -39,30 +39,30 @@ module.exports = utils
 
 ## Features
 
-- Determine if a value is a plain Object
-- Determine if a value is undefined
-- Determine if a value is a Buffer
-- Determine if a value is an ArrayBuffer
-- Determine if a value is a FormData
-- Determine if a value is a view on an ArrayBuffer
-- Determine if a value is a String
-- Determine if a value is a Number
-- Determine if a value is an Object
-- Determine if a value is a plain Object
-- Determine if a value is a Date
-- Determine if a value is a File
-- Determine if a value is a Blob
-- Determine if a value is a Function
-- Determine if a value is a Stream
-- Determine if a value is a URLSearchParams object
-- Trim excess whitespace off the beginning and end of a string
-- Determine if we're running in a standard browser environment
+- Determine if a value is undefined:`isUndefined`
+- Determine if a value is a Buffer:`isBuffer`
+- Determine if a value is an ArrayBuffer:`isArrayBuffer`
+- Determine if a value is a FormData:`isFormData`
+- Determine if a value is a view on an ArrayBuffer:`isArrayBufferView`
+- Determine if a value is a String:`isString`
+- Determine if a value is a Number:`isNumber`
+- Determine if a value is an Object:`isObject`
+- Determine if a value is a plain Object:`isPlainObject`
+- Determine if a value is an JSON:`isJSON`
+- Determine if a value is a Date:`isDate`
+- Determine if a value is a File:`isFile`
+- Determine if a value is a Blob:`isBlob`
+- Determine if a value is a Function:`isFunction`
+- Determine if a value is a Stream:`isStream`
+- Determine if a value is a URLSearchParams object:`isURLSearchParams`
+- Trim excess whitespace off the beginning and end of a string:`trim`
+- Determine if we're running in a standard browser environment:`isProcessEnv`
 - Similar to `isStandardBrowserEnv`, just check it's running in a Node environment
 - Determine if a value is a `form-data` node module
-- Iterate over an Array or an Object invoking a function for each item.
-- merges the properties of each object and returns result.
-- Extends object a by mutably adding to it the properties of object b.
-- Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+- Iterate over an Array or an Object invoking a function for each item:`forEach`
+- merges the properties of each object and returns result:`merge`
+- Extends object a by mutably adding to it the properties of object b:`extend`
+- Remove byte order marker. This catches EF BB BF (the UTF-8 BOM):`stripBOM`
 
 ## Unit Testing
 
