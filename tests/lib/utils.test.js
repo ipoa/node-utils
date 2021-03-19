@@ -25,14 +25,16 @@ describe('lib/utils', () => {
     utils.should.have.property('isObject')
     should(utils.isObject).be.a.Function()
   })
-  
+
   it('should have `isJSON` property and be a function', () => {
+    utils.should.have.property('isJSON')
+    should(utils.isJSON).be.a.Function()
+  })
+
+  it('method `isJSON` returns the result test', function () {
     var goodJson = '{"a":"obja","b":[0,1,2],"c":{"d":"some object"}}'
     var badJson = '{"a":"obja""b":[0,1,2],"c":{"d":"some object"}}'
     var strNumber = '121212'
-    utils.should.have.property('isJSON')
-    should(utils.isJSON).be.a.Function()
-
     should(utils.isJSON(goodJson)).eql(true)
     should(utils.isJSON(badJson)).eql(true)
     should(utils.isJSON(strNumber)).eql(false)
