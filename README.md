@@ -63,6 +63,7 @@ module.exports = utils
 - merges the properties of each object and returns result:`merge`
 - Extends object a by mutably adding to it the properties of object b:`extend`
 - Remove byte order marker. This catches EF BB BF (the UTF-8 BOM):`stripBOM`
+- Parse parameters from URL:`getUrlParams`
 
 ## Unit Testing
 
