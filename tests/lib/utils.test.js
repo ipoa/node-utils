@@ -80,4 +80,18 @@ describe('lib/utils', () => {
       utils.isProcessFormData(mockup).should.be.a.Boolean().and.be.True()
     })
   })
+  describe('utils::getUrlParams', () => {
+    it('method `getUrlParams` should be function', () => {
+      utils.getUrlParams.should.be.a.Function()
+    })
+
+    it('method `getUrlParams` should returns object', () => {
+      utils.getUrlParams().should.be.a.Object()
+    })
+
+    it('The method `getUrlParams` loads url parameters  should  return  parameters object', () => {
+      const url = 'http://xxx.xxx.com/?id=1&start=0&count=10'
+      should(utils.getUrlParams(url)).eql({ id: '1', start: '0', count: '10' })
+    })
+  })
 })
