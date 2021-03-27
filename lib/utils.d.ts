@@ -237,6 +237,8 @@ export interface Utils {
 
     stripBOM(content): string
 
+    getUrlParams(url: string): object
+
     [key: string]: any
 
 }
