@@ -91,7 +91,7 @@ describe('lib/utils', () => {
       utils.getUrlParams().should.be.a.Object()
     })
 
-    it('The method `getUrlParams` loads url parameters  should  return  parameters object', () => {
+    it('method `getUrlParams` loads url parameters  should  return  object result', () => {
       const url = 'http://xxx.xxx.com/?id=1&start=0&count=10'
       should(utils.getUrlParams(url)).eql({ id: '1', start: '0', count: '10' })
     })

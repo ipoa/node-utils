@@ -237,6 +237,19 @@ export interface Utils {
 
     stripBOM(content): string
 
+    /**
+     * @param {String} url
+     * @description Parse parameters from URL
+     *
+     * Example:
+     * ```js
+     * var url = 'http://xxx.xxx.com/?id=1&start=0&count=10'
+     * var result = getUrlParams(url);
+     * console.log(result); // outputs { id: '1', start: '0', count: '10' }
+     * ```
+     * @return {Object} parameters as Object
+     *
+     */
     getUrlParams(url: string): object
 
     [key: string]: any

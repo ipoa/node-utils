@@ -1,7 +1,7 @@
 # @ipoa/utils
 
 [![npm version](https://img.shields.io/npm/v/@ipoa/utils.svg?style=flat-square)](https://www.npmjs.org/package/@ipoa/utils)
-[![plugin version](https://shields.io/badge/@ipoa/utils-v0.0.6-blue)](https://www.npmjs.org/package/@ipoa/utils)
+[![plugin version](https://shields.io/badge/@ipoa/utils-v0.0.7-blue)](https://www.npmjs.org/package/@ipoa/utils)
 [![install size](https://packagephobia.com/badge?p=@ipoa/utils)](https://packagephobia.com/result?p=@ipoa/utils)
 
 ## install
@@ -35,6 +35,12 @@ utils.extend(utils, {
   },
 })
 module.exports = utils
+
+// getUrlParams
+var url = 'http://xxx.xxx.com/?id=1&start=0&count=10'
+var result = utils.getUrlParams(url);
+console.log(result); // outputs { id: '1', start: '0', count: '10' }
+
 ```
 
 ## Features
